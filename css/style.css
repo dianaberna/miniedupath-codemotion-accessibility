@@ -1393,7 +1393,7 @@ select.white-input:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 p.register-form-terms {
     margin-top: 15px;
-    font-size: 14px !important;
+    font-size: 14px;
     color: #eee;
 }
 
