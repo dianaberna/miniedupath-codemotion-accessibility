@@ -2093,3 +2093,7 @@ ul.benefits.white li i {
 #logo{
 	font-size: 10px;
 }
+
+.navbar svg{
+	fill: #17CF97;
+}
