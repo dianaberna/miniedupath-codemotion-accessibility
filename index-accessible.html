@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -21,6 +21,55 @@
 
     <!-- Font Favicon -->
     <link rel="shortcut icon" href="">
+
+    <style>
+        body{
+            line-height: 1.5;
+        }
+        p, .team-info p, ul, ol{
+            color: #333;
+            font-style: normal;
+        }
+        .home-section .row{
+            background-color: #333;
+            opacity: 0.9;
+            padding: 20px;
+        }
+        .register-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .register-form label{
+            text-align: left;
+            color: #fff;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+        a:focus, a:active, a:visited, .tab-example:focus, 
+        #register-form input.register-input:focus, #register-form select.register-input:focus, 
+        input.register-submit:focus,
+        .tab-container [role=tab][aria-selected=true]:focus-visible,
+        .tab-container [role=tab]:focus-visible{
+            outline: 2px dashed #000;
+        }
+        #logo{
+            font-size: 1.2rem;
+        }
+    </style>
     
 </head>
 
@@ -38,7 +87,7 @@
                     <!--begin logo -->
                     <a class="navbar-brand" href="#">
                         <svg id="logo-15" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M24.5 12.75C24.5 18.9632 19.4632 24 13.25 24H2V12.75C2 6.53679 7.03679 1.5 13.25 1.5C19.4632 1.5 24.5 6.53679 24.5 12.75Z" class="ccustom" fill="#17CF97"></path> <path d="M24.5 35.25C24.5 29.0368 29.5368 24 35.75 24H47V35.25C47 41.4632 41.9632 46.5 35.75 46.5C29.5368 46.5 24.5 41.4632 24.5 35.25Z" class="ccustom" fill="#17CF97"></path> <path d="M2 35.25C2 41.4632 7.03679 46.5 13.25 46.5H24.5V35.25C24.5 29.0368 19.4632 24 13.25 24C7.03679 24 2 29.0368 2 35.25Z" class="ccustom" fill="#17CF97"></path> <path d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z" class="ccustom" fill="#17CF97"></path> </svg>
-                        MyLandingPage
+                        <span id="logo">MyLandingPage</span>
                     </a>
                     <!--end logo -->
 
@@ -104,8 +153,6 @@
                     <p class="hero-text">Excepteur sentum occaecat cupidatat nonet proident, vante nislatum quistamused officiatumes ets deserunt etimus nets.</p>
 
                     <a href="#about" class="btn-red scrool">Get Started Now</a><br>
-
-                    <a href="#about" class="arrow-down scrool"><i class="pe-7s-angle-down-circle"></i></a>
 
                 </div>
                 <!--end col-md-12-->
@@ -186,7 +233,7 @@
 
                         <div class="main-services green">
 
-                            <h4>Google Analitycs</h4>
+                            <h3>Google Analitycs</h3>
 
                             <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
                             
@@ -200,7 +247,7 @@
 
                         <div class="main-services red">
 
-                            <h4>Brand Awareness</h4>
+                            <h3>Brand Awareness</h3>
 
                             <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
                             
@@ -214,7 +261,7 @@
 
                         <div class="main-services yellow">
 
-                            <h4>Graphic Design</h4>
+                            <h3>Graphic Design</h3>
 
                             <p>Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum nisle varius netsum.</p>
                             
@@ -261,7 +308,7 @@
                    
                     <div class="team-item">
                     
-                        <h3>CHRISTINA HAWKINS</h3>
+                        <b>CHRISTINA HAWKINS</b>
                         
                         <div class="team-info green"><p>Head of SEO</p></div>
 
@@ -279,7 +326,7 @@
                    
                     <div class="team-item">
                     
-                        <h3>ANDRES JOHANSON</h3>
+                        <b>ANDRES JOHANSON</b>
                         
                         <div class="team-info red"><p>Marketing Manager</p></div>
 
@@ -297,7 +344,7 @@
                    
                     <div class="team-item">
                     
-                        <h3>ALEXANDRA SMITHS</h3>
+                        <b>ALEXANDRA SMITHS</b>
                         
                         <div class="team-info yellow"><p>SEO Specialist</p></div>
 
@@ -341,7 +388,7 @@
                 <!--begin col-md-6-->
                 <div class="col-md-6">
 
-                    <h3>Discover how we can help you to grow your business fast.</h3>
+                    <h2>Discover how we can help you to grow your business fast.</h2>
 
                     <p>Velis demo enim ipsam voluptatem quia voluptas sit aspernatur netsum lorem fugit, seditum netis velas matrix net nesciunt.</p>
                     
@@ -400,19 +447,11 @@
                 <div class="col-md-4 col-sm-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100" alt="screenshot web agency landing page">
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" class="width-100">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" class="width-100" alt="screenshot ben kolde landing page">
                     </figure>
 
                 </div>
@@ -422,19 +461,11 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1526572195979-0f8a7ea44489?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="width-100" alt="pic">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1526572195979-0f8a7ea44489?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="width-100" alt="screenshot rucksack landing page">
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100" alt="pic">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100" alt="handwriting wireframe">
                     </figure>
 
                 </div>
@@ -444,27 +475,15 @@
                 <div class="col-md-4 col-sm-6 col-xs-12 p-0 m-0">
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100" alt="pic">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="width-100" alt="screenshot dashboard analitycs">
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80" class="width-100" alt="pic">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80" class="width-100" alt="screenshot cooking website">
                     </figure>
 
                     <figure class="gallery-insta">
-                        <!--begin popup-gallery-->
-                        <div class="popup-gallery popup-gallery-rounded portfolio-pic">
-                                <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" class="width-100" alt="pic">
-                        </div>
-                        <!--end popup-gallery-->
+                        <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" class="width-100" alt="screenshot social media">
                     </figure>
                     
                 </div>
@@ -551,7 +570,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Support 24/7</h4>
+                            <h3>Support 24/7</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -571,7 +590,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>User Friendly</h4>
+                            <h3>User Friendly</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -591,7 +610,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Notifications</h4>
+                            <h3>Notifications</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -618,7 +637,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Accesibility</h4>
+                            <h3>Accesibility</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -638,7 +657,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Cost Control</h4>
+                            <h3>Cost Control</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -660,7 +679,7 @@
 
                         <div class="feature-box-text">
 
-                            <h4>Chat With Friends</h4>
+                            <h3>Chat With Friends</h3>
 
                             <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
 
@@ -822,19 +841,19 @@
                       <li role="tab" aria-controls="tab-example_4" tabindex="0" aria-selected="false">Quis et stationes ullamcorper nets suscipit?</li>
                     </ul>
                     <main>
-                      <div id="tab-example_1" role="tabpanel" aria-expanded="true">
+                      <div id="tab-example_1" role="tabpanel">
                         <p>
                             Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.
                         </p>
                       </div>
-                      <div id="tab-example_2" role="tabpanel" aria-expanded="false">
+                      <div id="tab-example_2" role="tabpanel">
                         <p>
                           Aenean a augue sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sollicitudin lacus dolor, sit amet auctor sem congue id. Praesent pharetra euismod facilisis. Maecenas aliquet, lorem sit amet molestie convallis, mi augue faucibus
                           nulla, non rutrum felis nisi sed quam. Proin luctus, enim eget congue venenatis, quam ex gravida quam, sit amet congue erat ipsum ut libero. Nam maximus elit quis nisl imperdiet, ornare faucibus nulla suscipit. Integer iaculis sagittis nulla vel
                           commodo. Donec laoreet commodo elementum. Integer ex eros, varius nec blandit eleifend, fermentum id dui. Suspendisse nisl nulla, laoreet et turpis id, rhoncus bibendum elit.
                         </p>
                       </div>
-                      <div id="tab-example_3" role="tabpanel" aria-expanded="false">
+                      <div id="tab-example_3" role="tabpanel">
                         <p>
                           Suspendisse risus dui, volutpat sit amet tristique at, mattis at velit. Aenean eget tempor nunc. Sed pulvinar nisl non condimentum hendrerit. Morbi lorem magna, laoreet a porta ut, accumsan ac justo. Aliquam fermentum justo eget ante gravida posuere.
                           Phasellus libero dui, mollis vel sapien luctus, sodales fermentum eros. Fusce pellentesque iaculis odio vitae rutrum. In hac habitasse platea dictumst. Suspendisse mollis suscipit aliquam. Aenean a mi libero. Sed dapibus est vitae nisi auctor
@@ -842,7 +861,7 @@
                           et malesuada fames ac turpis egestas.
                         </p>
                       </div>
-                      <div id="tab-example_4" role="tabpanel" aria-expanded="false">
+                      <div id="tab-example_4" role="tabpanel">
                         <p>
                           Aenean a augue sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sollicitudin lacus dolor, sit amet auctor sem congue id. Praesent pharetra euismod facilisis. Maecenas aliquet, lorem sit amet molestie convallis, mi augue faucibus
                           nulla, non rutrum felis nisi sed quam. Proin luctus, enim eget congue venenatis, quam ex gravida quam, sit amet congue erat ipsum ut libero. Nam maximus elit quis nisl imperdiet, ornare faucibus nulla suscipit. Integer iaculis sagittis nulla vel
@@ -876,7 +895,7 @@
                 <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
-                    <h3 class="section-title white-text">Start Your Free 14-Day Trial</h3>
+                    <h2 class="section-title white-text">Start Your Free 14-Day Trial</h2>
 
                     <p class="section-subtitle white">For any other inquiries please <a href="#" class="register-link">get in touch here</a> or call us <b>+12 345 678 90</b></p>
 
@@ -904,10 +923,10 @@
                             
                             <!--begin register form -->
                             <form id="register-form" class="register-form register" action="" method="post">
-                                
-                                    <input class="register-input name-input white-input" required="" name="register_names" placeholder="Company Name*" type="text">
-                            
-                                    <input class="register-input name-email white-input" required="" name="register_email" placeholder="Email Adress*" type="email">
+                                <label for="register_names">Company Name (required):</label>
+                                <input class="register-input name-input white-input" required="" id="register_names" name="register_names" placeholder="Company Name" type="text">
+                                <label for="register_email">Email Adress (required)</label>
+                                <input class="register-input name-email white-input" required="" id="register_email" name="register_email" placeholder="Email Adress" type="email">
                                 
                                     <input value="Start Trial" class="register-submit" type="submit">
                                 
