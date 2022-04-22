@@ -77,18 +77,25 @@
             background: #1C8062;
             border: 1px solid #1C8062;
         }
-        ul.pricing-list li.price-tag a{
-            color:#1C8062;
+        ul.pricing-list li.price-tag a, .navbar-fixed-top .navbar-nav > li > a.discover-btn:hover{
+            color:#1C8062!important;
             border: 1px solid #1C8062;
         }
         .white-text{
             color: white!important;
         }
-        .btn-white, input.register-submit{
-            color: #1C8062;
+        .btn-white, input.register-submit, .btn-white:hover, .btn-white-border:hover,
+        .navbar-fixed-top .navbar-nav > li > a:hover{
+            color: #1C8062!important;
+        }
+        .navbar-fixed-top .navbar-nav > li > a:hover{
+            border-bottom: 1px solid #1C8062;
         }
         ul.footer_social li a svg{
             fill: #1C8062;
+        }
+        .tab-container [role=tab][aria-selected=true]::after, .btn-red:hover{
+            background: #1C8062;
         }
     </style>
     
@@ -954,7 +961,7 @@
                             </form>
                             <!--end register form -->
                             
-                            <p class="register-form-terms">Free 14-Day Trial • Money Back Guarantee</p>
+                            <p class="register-form-terms white-text">Free 14-Day Trial • Money Back Guarantee</p>
 
                         </div>
                         <!--end form-->
