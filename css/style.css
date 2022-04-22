@@ -2073,20 +2073,20 @@ ul.benefits.white li i {
   bottom: 0;
 }
 
-.tab-container main {
+.tab-container div {
   padding: 0 1em;
   position: relative;
 }
 
-.tab-container main p {
+.tab-container div p {
 	padding-top: 1em;
 }
 
-.tab-container main [role=tabpanel] {
+.tab-container div [role=tabpanel] {
   display: none;
 }
 
-.tab-container main [role=tabpanel][aria-expanded=true] {
+.tab-container div [role=tabpanel][aria-expanded=true] {
   display: block;
 }
 
