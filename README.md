@@ -1,1 +1,1 @@
-# edupath-codemotion-accessibility
+# Mini Edupath Codemotion - Accessibility 101
